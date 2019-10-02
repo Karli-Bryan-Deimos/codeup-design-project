@@ -1,0 +1,94 @@
+* html {
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-rows:*/
+    grid-gap: 6px;
+    background-color: #F0F0F0;
+    height: 300vh;
+    width: 100vw;
+    grid-template-areas:
+    ' .  .  .  .  .  .  .  .  .  .  .  .'
+    ' wb wb wb  wb wb wb  wb wb wb  wb wb wb '
+    ' .  .  . lgt lgt lgt  lgt lgt lgt . . . '
+    ' . . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . .'
+    ' . bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt .'
+    ' . . pc pc pc pc pc pc pc pc . . '
+    ' . redc redc redc redc redc yellowc yellowc yellowc yellowc yellowc .'
+    ' . greenc greenc greenc greenc greenc bluec bluec bluec bluec bluec  .'
+    ' .  .  .  . sel sel sel sel  .  .  .  .'
+    ' . img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 .'
+    '. proj proj proj proj .  . bar bar bar bar . ';
+}
+div {
+    border:1px solid black;
+}
+#logo {
+    grid-area: lg;
+}
+
+#whitebar {
+    grid-area: wb;
+}
+
+#logotext {
+    grid-area: lgt;
+
+}
+
+#smlogotext {
+    grid-area: smlgt;
+
+}
+
+#biglogotext {
+    grid-area: bglgt;
+
+}
+
+#parkcity {
+    grid-area: pc;
+
+}
+
+#redcircle {
+    grid-area:redc;
+
+}
+
+#yellowcircle {
+    grid-area: yellowc;
+
+}
+
+#greencircle {
+    grid-area: greenc;
+}
+
+#bluecircle {
+    grid-area: bluec;
+
+}
+
+#selectedwork {
+    grid-area: sel;
+
+}
+
+#img1 {
+    grid-area: img1;
+
+}
+
+#featuredproject {
+    grid-area: proj;
+
+}
+
+#smcirclebar {
+    grid-area: bar;
+
+}
