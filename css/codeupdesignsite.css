@@ -336,6 +336,10 @@ h5 {
 #imgcardlg1, #imgcardlg2, #imgcardlg3, #imgcardlg4 {
     display: none;
 }
+
+#art {
+    display: none;
+}
 /* Start of Small Screen */
 
 @media screen and (min-width: 576px){
@@ -362,6 +366,18 @@ h5 {
                 '. . . sel sel . . .'
                 '. img1 img1 img1 img2 img2 img2 .'
                 '. img3 img3 img3 img4 img4 img4 .';
+
+
+    /*   ------------------------------------- see on row 2, wbf1 and wbf2, we could use this to position the flexboxes for nav bar, we would have to add 2 ul's with ids, thoughts?------------------------------------------------*/
+    /*' . . . . . . . . '*/
+    /*'wb wbf1 wbf1 wb wbf2 wbf2 wb wb '*/
+    /*'. . lgt lgt lgt lgt . . '*/
+    /*'bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt'*/
+    /*'. pc pc pc pc pc pc . '*/
+    /*'. crc crc crc crc crc crc .'*/
+    /*'. . . sel sel . . .'*/
+    /*'. img1 img1 img1 img2 img2 img2 .'*/
+    /*'. img3 img3 img3 img4 img4 img4 .';*/
     }
 
     #imgcardsm1 {
@@ -418,11 +434,13 @@ h5 {
         #smcircrow{
             display: inline-block;
             grid-area: crc;
+            padding: 0;
         }
 
         #smcircrow ul{
             display: flex;
             justify-content: space-between;
+            padding: 0;
 
 
         }
@@ -475,8 +493,9 @@ h5 {
     #hrsmall {
         display: inline-block;
         color: #E6E6E6;
-        width:83%;
-        margin-left: 11%;
+        width:84%;
+        text-align: center;
+        margin-left: 8%;
 
     }
 
@@ -489,6 +508,10 @@ h5 {
     }
 
 #imgcardlg1, #imgcardlg2, #imgcardlg3, #imgcardlg4 {
+    display: none;
+}
+
+#art {
     display: none;
 }
 /* Media Query for Large Screens */
@@ -507,14 +530,14 @@ h5 {
         height: 100%;
         width: 100vw;
         grid-template-areas:
-                " .  .  . "
-                "wb  wb  wb"
-                "bglgt bglgt bglgt"
+                "  . .  .  "
+                " wb wb  wb  "
+                "  bglgt bglgt bglgt  "
                 " .  pc  .  "
-                "crc  crc  crc"
-                "sel  .  last"
-                "imglg1 imglg2 art1"
-                "imglg3 imglg4 art1";
+                "  crc  crc  crc  "
+                "  sel  .  last  "
+                "  imglg1 imglg2 art1  "
+                " imglg3 imglg4 art1  ";
 
     }
 
@@ -522,6 +545,8 @@ h5 {
     /*need to add "last"*/
     #art {
         grid-area: art1;
+        display: inline-block;
+        margin-top: -45px;
     }
 
     #imgcardlg1 {
@@ -565,8 +590,37 @@ h5 {
         margin-right:200px;
         display: flex;
         justify-content: space-between;
+        padding: 0;
 
 
     }
 
     }
+
+@media screen and (min-width: 1200px) {
+
+    #container {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 15% repeat(3, 1fr) 15%;
+        justify-content: center;
+        align-content: center;
+        /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
+        grid-gap: 0;
+        height: 100%;
+        width: 100vw;
+        grid-template-areas:
+                ".  .  .  .  ."
+                "wb wb wb wb wb"
+                ". bglgt bglgt bglgt ."
+                ".  .  pc  .  ."
+                ".  crc  crc  crc  ."
+                ".  sel  .  last  ."
+                ".  imglg1 imglg2 art1  ."
+                ". imglg3 imglg4 art1  .";
+
+    }
+
+
+}
