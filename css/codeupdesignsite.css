@@ -297,9 +297,10 @@ h5 {
     border-radius: 50%;
 }
 
-.lowimgflexbar {
-    justify-content: space-between;
-}
+/*.lowimgflexbar {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
 
 #smallredxs {
     /*background-color: #E6563B;*/
@@ -484,6 +485,11 @@ h5 {
 
     #smallbluesm {
         background-color: #00ABA9;
+    }
+
+    #manpicdiv {
+        height: 215px;
+
     }
 
         /*add this crc class for circles*/
