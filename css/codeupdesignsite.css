@@ -329,6 +329,13 @@ h5 {
 #imgcardsm1, #imgcardsm2, #imgcardsm3, #imgcardsm4 {
     display: none;
 }
+#thelast{
+    display:none;
+}
+
+#imgcardlg1, #imgcardlg2, #imgcardlg3, #imgcardlg4 {
+    display: none;
+}
 /* Start of Small Screen */
 
 @media screen and (min-width: 576px){
@@ -473,28 +480,93 @@ h5 {
 
     }
 
-    /*#smallredsm {*/
-        /*background-color: #E6563B;*/
-    /*}*/
-
-    /*#smallyellowsm {*/
-        /*background-color: #EB9D3A;*/
-    /*}*/
-
-    /*#smallgreensm {*/
-        /*background-color: #7CB06C;*/
-    /*}*/
-
-    /*#smallbluesm {*/
-        /*background-color: #00ABA9;*/
-    /*}*/
-
-    /*#manpicdiv {*/
-    /*    height: 215px;*/
-
-    /*}*/
-
-        /*add this crc class for circles*/
+    .smhide {
+        display: none;
+    }
+    }
+    #thelast{
+        display:none;
     }
 
+#imgcardlg1, #imgcardlg2, #imgcardlg3, #imgcardlg4 {
+    display: none;
+}
+/* Media Query for Large Screens */
 
+@media screen and (min-width: 992px) {
+
+    #container {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-content: center;
+        /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
+        grid-gap: 0;
+        height: 100%;
+        width: 100vw;
+        grid-template-areas:
+                " .  .  . "
+                "wb  wb  wb"
+                "bglgt bglgt bglgt"
+                " .  pc  .  "
+                "crc  crc  crc"
+                "sel  .  last"
+                "imglg1 imglg2 art1"
+                "imglg3 imglg4 art1";
+
+    }
+
+    /*add grid area for new img and art*/
+    /*need to add "last"*/
+    #art {
+        grid-area: art1;
+    }
+
+    #imgcardlg1 {
+        grid-area: imglg1;
+
+    }
+
+    #imgcardlg2 {
+        grid-area: imglg2;
+    }
+
+    #imgcardlg3 {
+        grid-area: imglg3;
+    }
+
+    #imgcardlg4 {
+        grid-area: imglg4;
+    }
+
+    #thelast {
+        grid-area: last;
+        display:inline-block;
+    }
+
+    #imgcardsm1, #imgcardsm2, #imgcardsm3, #imgcardsm4 {
+        display: none;
+    }
+    #logotext{
+        display:none;
+
+    }
+    #imgcardlg1, #imgcardlg2, #imgcardlg3, #imgcardlg4 {
+        display: inline-block;
+    }
+
+    #art ul {
+        list-style-type: none;
+    }
+    #smcircrow ul{
+        margin-left: 200px;
+        margin-right:200px;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    }
