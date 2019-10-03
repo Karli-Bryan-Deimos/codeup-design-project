@@ -295,3 +295,120 @@ h5 {
 #smallblue {
     background-color: #00ABA9;
 }
+
+#smcircrow{
+    display:none;
+}
+
+#hrsmall {
+    display: none;
+}
+/* Start of Small Screen */
+
+@media screen and (min-width: 576px){
+
+    #container {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        grid-template-columns:  repeat(8, 1fr);
+        justify-content: center;
+        align-content: center;
+        /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
+        grid-gap: 0;
+        height: 100%;
+        width: 100vw;
+        grid-template-areas:
+        ' . . . . . . . . '
+        'wb wb wb wb wb wb wb wb '
+        '. . lgt lgt lgt lgt . . '
+        'bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt'
+        '. pc pc pc pc pc pc . '
+        '. crc crc crc crc crc crc .'
+        '. . . sel sel . . .'
+        '. img1 img1 img1 img2 img2 img2 .'
+        '. img3 img3 img3 img4 img4 img4 .';
+        }
+
+        br{
+            display: none;
+        }
+
+        #biglogotext{
+            white-space: nowrap;
+        }
+
+        /*this class hides elements on XS/mobile sized screens*/
+        .xshide{
+            display:none;
+        }
+
+        #smcircrow{
+            display: inline-block;
+            grid-area: crc;
+        }
+
+        #smcircrow ul{
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        #smcircrow ul li{
+           list-style: none;
+
+        }
+
+    #smcircrow ul li div{
+        height: 105px;
+        width: 105px;
+        border-radius: 50%;
+        border: 5px solid white;
+        text-align: center;
+
+    }
+
+    #redcirclesm {
+        grid-area: redc;
+        background-color: #E6563B;
+        margin-right: 5px;
+
+    }
+
+    #yellowcirclesm {
+        grid-area: yellowc;
+        background-color: #EB9D3A;
+        margin-left: 5px;
+
+
+    }
+
+    #greencirclesm {
+        grid-area: greenc;
+        background-color: #7CB06C;
+        margin-right: 5px;
+
+
+    }
+
+    #bluecirclesm {
+        grid-area: bluec;
+        background-color: #00ABA9;
+        margin-left: 5px;
+
+
+    }
+
+    #hrsmall {
+        display: inline-block;
+        color: #E6E6E6;
+        width:83%;
+        margin-left: 11%;
+
+    }
+
+        /*add this crc class for circles*/
+    }
+
+
