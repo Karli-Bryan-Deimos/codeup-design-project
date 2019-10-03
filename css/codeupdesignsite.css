@@ -1,16 +1,21 @@
 html {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: #F0F0F0;
+    margin: 0;
+    /*align-items: center;*/
+
 }
+
 .anton {
     font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
 }
 
 .abel {
@@ -19,49 +24,47 @@ body{
 
 h1 {
     font-size: 64px;
-
 }
 
 h2 {
     font-size: 48px;
-
 }
 
 h3 {
     font-size: 40px;
-
 }
 
 h4 {
     font-size: 32px;
-
 }
 
 h5 {
     font-size: 28px;
-
 }
 
 
 #container {
     display: grid;
-    grid-template-columns: repeat(10, 40px);
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 20px repeat(10, 1fr) 20px;
+    justify-content: center;
+    align-content: center;
     /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
     grid-gap: 0;
-    height: 100vh;
-    width: 300px;
-    grid-template-areas:
-            '   .  .  .  .  .  .  .  .  .  .  '
-            '  wb wb  wb wb wb  wb wb wb  wb wb  '
-            '   .  . lgt lgt lgt  lgt lgt lgt . .  '
-            '  . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . '
-            ' bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt '
-            '  . pc pc pc pc pc pc pc pc .  '
-            '  . redc redc redc . . yellowc yellowc yellowc . '
-            '  . greenc greenc greenc . . bluec bluec bluec .  '
-            '   .  .  sel sel sel sel sel  sel  .  .  '
-            '  img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 '
-            ' proj proj proj proj .  bar bar bar bar .  ';
+    height: 100%;
+    width: 100vw;
+    grid-template-areas: ' .  .  .  .  .  .  .  .  .  .  .  . '
+    ' wb wb wb wb  wb wb wb  wb wb wb  wb wb  '
+    ' .  .  lgt lgt lgt lgt  lgt lgt lgt lgt . . '
+    ' .  . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . . '
+    ' bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt '
+    ' . pc pc pc pc pc pc pc pc pc pc . '
+    '.  redc redc redc redc redc yellowc yellowc yellowc yellowc yellowc .'
+    '.  greenc greenc greenc greenc greenc bluec bluec bluec bluec bluec . '
+    '.   .  .  sel sel sel sel sel  sel  .  .  .'
+    ' . img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 .'
+    '. proj proj proj proj .  bar bar bar bar bar  .';
 }
 
 
@@ -88,6 +91,7 @@ h5 {
     /*margin-right: auto;*/
     /*margin-top:*/
     margin: auto;
+    margin-top: -20px;
     vertical-align: middle;
 
     /*position: absolute;*/
@@ -98,6 +102,7 @@ h5 {
     grid-area: wb;
     background-color: white;
     width: 100%;
+    /*margin-left: 0;*/
     /*display: flex;*/
     /*text-align: center;*/
 }
@@ -105,27 +110,48 @@ h5 {
 #logotext {
     grid-area: lgt;
     text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+    height: 120px;
+    /*transform: translateX(-50%);*/
+    padding: 0;
+    /*white-space: nowrap;*/
+
+}
+
+#logotext h3 {
+    /*margin: auto;*/
 }
 
 #smlogotext {
     grid-area: smlgt;
 
+
 }
 
-#smlogoflex{
-    display:flex;
+#smlogoflex {
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    height: 10px;
 }
 
 #smlogoflex li {
-    padding-left: 5px;
-    padding-right: 5px;
+    /*padding-left: 5px;*/
+    /*padding-right: 5px;*/
 }
+
 #biglogotext {
     grid-area: bglgt;
     text-align: center;
+    /*display: inline-block;*/
+    height: 150px;
+}
 
+#biglogotext h3 {
+    /*margin: none;*/
 }
 
 #parkcity {
@@ -133,9 +159,10 @@ h5 {
     /*margin:auto;*/
     text-align: center;
 
+
 }
 
-.colorcircles{
+.colorcircles {
     height: 105px;
     width: 105px;
     border-radius: 50%;
@@ -144,25 +171,32 @@ h5 {
 }
 
 
-.leftcircle{
-    margin-left: 25%;
+.leftcircle {
+    margin-right: -10%;
+    /*margin-left: 20px;*/
+    /*margin-left: 10%;*/
     /*margin-left: 50%;*/
     /*transform: translateX(-50%);*/
 
 }
 
-.rightcircle{
-    margin-left: -25%;
+.rightcircle {
+    /*margin-right: 0%;*/
     /*margin-right: 50%;*/
     /*transform: translateX(-50%);*/
 }
 
+.topcircle {
+    margin: auto;
+}
 
-.bottomcircle{
-    margin-top: 10px;
+.bottomcircle {
+    margin: auto;
+    margin-top: 5px;
     margin-bottom: 100px;
 }
-.circletext{
+
+.circletext {
     /*margin-top: 37%;*/
     color: white;
     line-height: 105px;
@@ -172,23 +206,31 @@ h5 {
 #redcircle {
     grid-area: redc;
     background-color: #E6563B;
+    margin-right: 5px;
 
 }
 
 #yellowcircle {
     grid-area: yellowc;
     background-color: #EB9D3A;
+    margin-left: 5px;
+
 
 }
 
 #greencircle {
     grid-area: greenc;
     background-color: #7CB06C;
+    margin-right: 5px;
+
+
 }
 
 #bluecircle {
     grid-area: bluec;
     background-color: #00ABA9;
+    margin-left: 5px;
+
 
 }
 
@@ -209,8 +251,8 @@ h5 {
 
 #featuredproject {
     grid-area: proj;
-    margin-top: -30px;
-    margin-bottom: 100px;
+    /*margin-top: -30px;*/
+    margin-bottom: 50px;
     white-space: nowrap;
 
 
@@ -218,7 +260,7 @@ h5 {
 
 #smcirclebar {
     grid-area: bar;
-    margin-top: 10px;
+    margin-top: -10px;
     /*display: flex;*/
 
 }
@@ -241,12 +283,15 @@ h5 {
 #smallred {
     background-color: #E6563B;
 }
+
 #smallyellow {
     background-color: #EB9D3A;
 }
- #smallgreen {
-     background-color: #7CB06C;
- }
+
+#smallgreen {
+    background-color: #7CB06C;
+}
+
 #smallblue {
     background-color: #00ABA9;
 }
