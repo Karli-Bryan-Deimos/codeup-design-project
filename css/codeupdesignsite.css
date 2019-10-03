@@ -13,6 +13,23 @@ body {
 
 }
 
+
+.red {
+    background-color: #E6563B;
+}
+
+.yellow {
+    background-color: #EB9D3A;
+}
+
+.green {
+    background-color: #7CB06C;
+}
+
+.blue {
+    background-color: #00ABA9;
+}
+
 .anton {
     font-family: 'Anton', sans-serif;
     letter-spacing: 2px;
@@ -63,7 +80,7 @@ h5 {
     '.  redc redc redc redc redc yellowc yellowc yellowc yellowc yellowc .'
     '.  greenc greenc greenc greenc greenc bluec bluec bluec bluec bluec . '
     '.   .  .  sel sel sel sel sel  sel  .  .  .'
-    ' . img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 .'
+    ' . imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob .'
     '. proj proj proj proj .  bar bar bar bar bar  .';
 }
 
@@ -242,9 +259,9 @@ h5 {
 
 }
 
-#img1 {
+#imgformobilescreen {
     background-color: #F0F0F0;
-    grid-area: img1;
+    grid-area: imgmob;
     border: 20px solid #E6E6E6;
     border-radius: 10px;
 }
@@ -280,20 +297,24 @@ h5 {
     border-radius: 50%;
 }
 
-#smallred {
-    background-color: #E6563B;
+.lowimgflexbar {
+    justify-content: space-between;
 }
 
-#smallyellow {
-    background-color: #EB9D3A;
+#smallredxs {
+    /*background-color: #E6563B;*/
 }
 
-#smallgreen {
-    background-color: #7CB06C;
+#smallyellowxs {
+    /*background-color: #EB9D3A;*/
 }
 
-#smallblue {
-    background-color: #00ABA9;
+#smallgreenxs {
+    /*background-color: #7CB06C;*/
+}
+
+#smallbluexs {
+    /*background-color: #00ABA9;*/
 }
 
 #smcircrow{
@@ -301,6 +322,10 @@ h5 {
 }
 
 #hrsmall {
+    display: none;
+}
+
+#imgcardsm1, #imgcardsm2, #imgcardsm3, #imgcardsm4 {
     display: none;
 }
 /* Start of Small Screen */
@@ -329,6 +354,45 @@ h5 {
         '. img1 img1 img1 img2 img2 img2 .'
         '. img3 img3 img3 img4 img4 img4 .';
         }
+
+    #imgcardsm1 {
+        grid-area: img1;
+    }
+    #imgcardsm2 {
+        grid-area: img2;
+
+    }
+    #imgcardsm3 {
+        grid-area: img3;
+
+    }
+    #imgcardsm4 {
+        grid-area: img4;
+
+    }
+
+    #imgcardsm1, #imgcardsm2, #imgcardsm3, #imgcardsm4 {
+        display: inline-block;
+    }
+
+    .smallcircssm {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        line-height: 18px;
+        margin: auto;
+        margin-left: 1%;
+        margin-right: 1%;
+
+    }
+
+    .imgsm {
+        height: 90%;
+        width: 90%;
+        border: 10px solid #E6E6E6;
+        border-radius: 10px;
+    }
+
 
         br{
             display: none;
@@ -369,14 +433,14 @@ h5 {
 
     }
 
-    #redcirclesm {
+    #redcirclexs {
         grid-area: redc;
         background-color: #E6563B;
         margin-right: 5px;
 
     }
 
-    #yellowcirclesm {
+    #yellowcirclexs {
         grid-area: yellowc;
         background-color: #EB9D3A;
         margin-left: 5px;
@@ -384,7 +448,7 @@ h5 {
 
     }
 
-    #greencirclesm {
+    #greencirclexs {
         grid-area: greenc;
         background-color: #7CB06C;
         margin-right: 5px;
@@ -392,7 +456,7 @@ h5 {
 
     }
 
-    #bluecirclesm {
+    #bluecirclexs {
         grid-area: bluec;
         background-color: #00ABA9;
         margin-left: 5px;
@@ -406,6 +470,22 @@ h5 {
         width:83%;
         margin-left: 11%;
 
+    }
+
+    #smallredsm {
+        background-color: #E6563B;
+    }
+
+    #smallyellowsm {
+        background-color: #EB9D3A;
+    }
+
+    #smallgreensm {
+        background-color: #7CB06C;
+    }
+
+    #smallbluesm {
+        background-color: #00ABA9;
     }
 
         /*add this crc class for circles*/
