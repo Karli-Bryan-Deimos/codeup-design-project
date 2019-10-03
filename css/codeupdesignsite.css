@@ -302,21 +302,21 @@ h5 {
 /*    justify-content: space-between;*/
 /*}*/
 
-#smallredxs {
-    /*background-color: #E6563B;*/
-}
+/*#smallredxs {*/
+    /*!*background-color: #E6563B;*!*/
+/*}*/
 
-#smallyellowxs {
-    /*background-color: #EB9D3A;*/
-}
+/*#smallyellowxs {*/
+    /*!*background-color: #EB9D3A;*!*/
+/*}*/
 
-#smallgreenxs {
-    /*background-color: #7CB06C;*/
-}
+/*#smallgreenxs {*/
+    /*!*background-color: #7CB06C;*!*/
+/*}*/
 
-#smallbluexs {
-    /*background-color: #00ABA9;*/
-}
+/*#smallbluexs {*/
+    /*!*background-color: #00ABA9;*!*/
+/*}*/
 
 #smcircrow{
     display:none;
@@ -333,6 +333,7 @@ h5 {
 
 @media screen and (min-width: 576px){
 
+
     #container {
         display: grid;
         margin: 0;
@@ -345,22 +346,23 @@ h5 {
         height: 100%;
         width: 100vw;
         grid-template-areas:
-        ' . . . . . . . . '
-        'wb wb wb wb wb wb wb wb '
-        '. . lgt lgt lgt lgt . . '
-        'bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt'
-        '. pc pc pc pc pc pc . '
-        '. crc crc crc crc crc crc .'
-        '. . . sel sel . . .'
-        '. img1 img1 img1 img2 img2 img2 .'
-        '. img3 img3 img3 img4 img4 img4 .';
-        }
+                ' . . . . . . . . '
+                'wb wb wb wb wb wb wb wb '
+                '. . lgt lgt lgt lgt . . '
+                'bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt'
+                '. pc pc pc pc pc pc . '
+                '. crc crc crc crc crc crc .'
+                '. . . sel sel . . .'
+                '. img1 img1 img1 img2 img2 img2 .'
+                '. img3 img3 img3 img4 img4 img4 .';
+    }
 
     #imgcardsm1 {
         grid-area: img1;
     }
     #imgcardsm2 {
         grid-area: img2;
+
 
     }
     #imgcardsm3 {
@@ -471,21 +473,21 @@ h5 {
 
     }
 
-    #smallredsm {
-        background-color: #E6563B;
-    }
+    /*#smallredsm {*/
+        /*background-color: #E6563B;*/
+    /*}*/
 
-    #smallyellowsm {
-        background-color: #EB9D3A;
-    }
+    /*#smallyellowsm {*/
+        /*background-color: #EB9D3A;*/
+    /*}*/
 
-    #smallgreensm {
-        background-color: #7CB06C;
-    }
+    /*#smallgreensm {*/
+        /*background-color: #7CB06C;*/
+    /*}*/
 
-    #smallbluesm {
-        background-color: #00ABA9;
-    }
+    /*#smallbluesm {*/
+        /*background-color: #00ABA9;*/
+    /*}*/
 
     /*#manpicdiv {*/
     /*    height: 215px;*/
