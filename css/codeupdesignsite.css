@@ -603,7 +603,7 @@ h5 {
         display: grid;
         margin: 0;
         padding: 0;
-        grid-template-columns: 15% repeat(3, 1fr) 15%;
+        grid-template-columns: 12% repeat(3, 1fr) 12%;
         justify-content: center;
         align-content: center;
         /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
