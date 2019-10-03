@@ -1,9 +1,10 @@
-* html {
+html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    width: 100vw;
 }
+
 
 body{
     background-color: #F0F0F0;
@@ -43,29 +44,67 @@ h5 {
 
 
 #container {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
     /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
-    grid-gap: 6px;
+    grid-gap: 0;
     height: 100vh;
-    width: 100vw;
-    grid-template-areas: ' .  .  .  .  .  .  .  .  .  .  .  .' ' wb wb wb  wb wb wb  wb wb wb  wb wb wb ' ' .  .  . lgt lgt lgt  lgt lgt lgt . . . ' ' . . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . .' ' . bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt .' ' . . pc pc pc pc pc pc pc pc . . ' ' . redc redc redc redc redc yellowc yellowc yellowc yellowc yellowc .' ' . greenc greenc greenc greenc greenc bluec bluec bluec bluec bluec  .' ' .  .  .  . sel sel sel sel  .  .  .  .' ' . img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 .' '. proj proj proj proj .  . bar bar bar bar . ';
+    width: 300px;
+    grid-template-areas:
+            '   .  .  .  .  .  .  .  .  .  .  '
+            '  wb wb  wb wb wb  wb wb wb  wb wb  '
+            '   .  . lgt lgt lgt  lgt lgt lgt . .  '
+            '  . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . '
+            ' bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt '
+            '  . pc pc pc pc pc pc pc pc .  '
+            '  . redc redc redc . . yellowc yellowc yellowc . '
+            '  . greenc greenc greenc . . bluec bluec bluec .  '
+            '   .  .  sel sel sel sel sel  sel  .  .  '
+            '  img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 '
+            ' proj proj proj proj .  bar bar bar bar .  ';
 }
 
 
 #logo {
     grid-area: lg;
+    /*position: absolute;*/
+    /*margin-top: 180px;*/
+    /*margin-left: 50%;*/
+    /*transform: translateX(-50%);*/
+    margin: auto;
+    height: 105px;
+    width: 105px;
+    /*align-items: center;*/
+    /*vertical-align: middle;*/
+
+}
+
+#logoimg {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: block;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-top:*/
+    margin: auto;
+    vertical-align: middle;
+
+    /*position: absolute;*/
+
 }
 
 #whitebar {
     grid-area: wb;
     background-color: white;
-    width: 110%;
+    width: 100%;
+    /*display: flex;*/
+    /*text-align: center;*/
 }
 
 #logotext {
     grid-area: lgt;
-    margin: auto;
+    text-align: center;
 }
 
 #smlogotext {
@@ -78,6 +117,11 @@ h5 {
     justify-content: space-evenly;
     list-style: none;
 }
+
+#smlogoflex li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 #biglogotext {
     grid-area: bglgt;
     text-align: center;
@@ -86,40 +130,42 @@ h5 {
 
 #parkcity {
     grid-area: pc;
-    margin:auto;
+    /*margin:auto;*/
+    text-align: center;
 
 }
 
 .colorcircles{
-    height: 262px;
-    width: 262px;
+    height: 105px;
+    width: 105px;
     border-radius: 50%;
-    border: 20px solid white;
+    border: 5px solid white;
     text-align: center;
-
-
 }
 
 
 .leftcircle{
-    margin-left: 50%;
-    transform: translateX(-50%);
-
-}
-
-.rightcircle{
-    margin-right: 50%;
+    margin-left: 25%;
+    /*margin-left: 50%;*/
     /*transform: translateX(-50%);*/
 
 }
 
+.rightcircle{
+    margin-left: -25%;
+    /*margin-right: 50%;*/
+    /*transform: translateX(-50%);*/
+}
+
+
 .bottomcircle{
-    margin-top: 20px;
-    margin-bottom: 350px;
+    margin-top: 10px;
+    margin-bottom: 100px;
 }
 .circletext{
-    margin-top: 37%;
+    /*margin-top: 37%;*/
     color: white;
+    line-height: 105px;
 
 }
 
@@ -148,22 +194,59 @@ h5 {
 
 #selectedwork {
     grid-area: sel;
-    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    white-space: nowrap;
 
 }
 
 #img1 {
     background-color: #F0F0F0;
     grid-area: img1;
-
+    border: 20px solid #E6E6E6;
+    border-radius: 10px;
 }
 
 #featuredproject {
     grid-area: proj;
+    margin-top: -30px;
+    margin-bottom: 100px;
+    white-space: nowrap;
+
 
 }
 
 #smcirclebar {
     grid-area: bar;
+    margin-top: 10px;
+    /*display: flex;*/
 
+}
+
+#smcirclebar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 18px;
+
+}
+
+.smallcircs {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+#smallred {
+    background-color: #E6563B;
+}
+#smallyellow {
+    background-color: #EB9D3A;
+}
+ #smallgreen {
+     background-color: #7CB06C;
+ }
+#smallblue {
+    background-color: #00ABA9;
 }
