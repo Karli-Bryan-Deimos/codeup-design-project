@@ -4,7 +4,20 @@ html {
     width: 100%;
     box-sizing: border-box;
 }
+.center {
+    text-align: center;
+}
+#whitebar2 {
+    display: none
+}
 
+#ogo2 {
+    display: none
+}
+
+#logoimg2 {
+    display: none;
+}
 
 body {
     background-color: #F0F0F0;
@@ -73,11 +86,12 @@ h5 {
 
 
 #logo {
-    grid-area: lg;
-    margin: auto;
-    height: 105px;
-    width: 105px;
-}
+      grid-area: lg;
+      margin: auto;
+      height: 105px;
+      width: 105px;
+      margin-top: -10px
+  }
 
 #logoimg {
     height: 100%;
@@ -93,7 +107,9 @@ h5 {
     grid-area: wb;
     background-color: white;
     width: 100%;
+
 }
+
 
 #logotext {
     grid-area: lgt;
@@ -256,7 +272,6 @@ h5 {
     display: none;
 }
 #smnavbar li {
-    /*^^^^^^^ identifier for new navbar^^^^^^^^^*/
 
 }
 /* -----------Start of Small Screen------------------------------------------------------------ */
@@ -277,6 +292,29 @@ h5 {
         grid-template-areas: ' . . . . . . . . ' 'wb wb wb wb wb wb wb wb ' '. . lgt lgt lgt lgt . . ' 'bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt' '. pc pc pc pc pc pc . ' '. crc crc crc crc crc crc .' '. . . sel sel . . .' '. img1 img1 img1 img2 img2 img2 .' '. img3 img3 img3 img4 img4 img4 .';
     }
 
+    #whitebar2 {
+        display: inline-block;
+        grid-area: wb;
+    }
+
+    #logo2 {
+        display: inline-block;
+        grid-area: lg;
+        margin: auto;
+        height: 105px;
+        width: 105px;
+        margin-top: -10px
+    }
+
+    #logoimg2 {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        margin: auto;
+        /*margin-top: -20px;*/
+        vertical-align: middle;
+    }
     #imgcardsm1 {
         grid-area: img1;
     }
@@ -296,6 +334,7 @@ h5 {
     #imgcardsm1, #imgcardsm2, #imgcardsm3, #imgcardsm4 {
         display: inline-block;
     }
+
 
     .smallcircssm {
         height: 18px;

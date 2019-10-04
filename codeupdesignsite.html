@@ -20,23 +20,49 @@
 <main>
 
     <div id="container">
-<!-----------------------added ul-smnavbar to div-whitebar. kept logo in div as 3rd li----------------------------------------->
-
+        <!-----------------------added ul-smnavbar to div-whitebar. kept logo in div as 3rd li----------------------------------------->
         <div id="whitebar" style="height:60px; width: 100vw; margin-top: 55px;">
-            <ul id="smnavbar" class="abel" style="display: flex; list-style-type: none; justify-content: space-evenly;">
+
+            <div id="logo" class="xshide">
+                <img src="assets/logo.png" id="logoimg" alt="logo">
+            </div>
+        </div>
+
+
+        <div id="whitebar2" style="height:60px; width: 100vw; margin-top: 55px;">
+            <ul id="smnavbar" class="abel"
+                style="display: flex; list-style-type: none; justify-content: space-evenly; align-items: center; width: 75%; margin: -10px auto; padding: 0">
                 <li>SERVICES</li>
                 <li>WORK</li>
-                    <li>
-                        <div id="logo">
-                            <img src="assets/logo.png" id="logoimg" alt="logo">
-                        </div>
-                    </li>
+                <li>
+                    <div id="logo2">
+                        <img src="assets/logo.png" id="logoimg2" alt="logo">
+                    </div>
+                </li>
                 <li>BLOG</li>
                 <li>CONTACT</li>
             </ul>
         </div>
 
-        <div id="logotext">
+<!--        going to rework this into navbar for last 2 sizes by changing order of li and margins-->
+
+<!--        <div id="whitebar2" style="height:60px; width: 100vw; margin-top: 55px;">-->
+<!--            <ul id="smnavbar" class="abel"-->
+<!--                style="display: flex; list-style-type: none; justify-content: space-evenly; align-items: center; width: 75%; margin: -10px auto; padding: 0">-->
+<!--                <li>SERVICES</li>-->
+<!--                <li>WORK</li>-->
+<!--                <li>-->
+<!--                    <div id="logo2">-->
+<!--                        <img src="assets/logo.png" id="logoimg2" alt="logo">-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li>BLOG</li>-->
+<!--                <li>CONTACT</li>-->
+<!--            </ul>-->
+<!--        </div>-->
+
+
+        <div id="logotext" class>
             <h3 class="abel"> codeup design </h3>
         </div>
 
@@ -74,19 +100,19 @@
         </div>
 
         <div class="colorcircles leftcircle topcircle xshide" id="redcircle">
-            <span class="circletext anton">DESIGN</span>
+            <span class="circletext anton xshide">DESIGN</span>
         </div>
 
         <div class="colorcircles rightcircle topcircle xshide" id="yellowcircle">
-            <span class="circletext anton">DEVELOP</span>
+            <span class="circletext anton xshide">DEVELOP</span>
         </div>
 
         <div class="colorcircles leftcircle bottomcircle xshide" id="greencircle">
-            <span class="circletext anton">SUPPORT</span>
+            <span class="circletext anton xshide">SUPPORT</span>
         </div>
 
         <div class="colorcircles rightcircle bottomcircle xshide" id="bluecircle">
-            <span class="circletext anton">HOST</span>
+            <span class="circletext anton xshide">HOST</span>
         </div>
 
         <div id="selectedwork">
@@ -102,9 +128,9 @@
         </div>
 
         <div id="smcirclebar" class="xshide">
-            <ul>
+            <ul class="center">
                 <li>
-                    <div id="smallredxs" class="smallcircs anton xshide red">D</div>
+                    <div id="smallredxs" class="smallcircs anton xshide red center">D</div>
                 </li>
                 <li>
                     <div id="smallyellowxs" class="smallcircs anton xshide yellow">D</div>
@@ -134,15 +160,15 @@
             </ul>
             <hr id="hrsmall">
         </div>
-
+<!--image cards starting at SM size------------------->
         <div id="imgcardsm1" class="xshide smhide">
             <div><img class="imgsm" src="assets/images/apple-ipad.jpg" alt="apples"></div>
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between; text-align: center">
                     <li>
-                        <div class="smallcircssm anton red ">D</div>
+                        <div class="smallcircssm anton red">D</div>
                     </li>
                     <li>
                         <div class="smallcircssm anton yellow ">D</div>
