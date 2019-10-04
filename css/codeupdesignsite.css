@@ -474,12 +474,17 @@ h5 {
         padding: 0;
     }
 
+
+    /* this is for the new ul*/
     #mlogotext {
         display: inline-block;
     }
 
+    #mlogoflex{
+        list-style: none;
+    }
 
-
+/* end of styling for new ul */
 }
 
 /*-----For Extra Large Screens -----*/
