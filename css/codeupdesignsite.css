@@ -4,9 +4,22 @@ html {
     width: 100%;
     box-sizing: border-box;
 }
+
+
+.hover {
+    transition: all .5s;
+}
+
+.hover:hover {
+    text-shadow: 2px 2px #E6E6E6;
+    font-weight: bold;
+}
+
+
 .center {
     text-align: center;
 }
+
 #whitebar2 {
     display: none
 }
@@ -16,6 +29,22 @@ html {
 }
 
 #logoimg2 {
+    display: none;
+}
+
+#whitebar3 {
+    display: none
+}
+
+#ogo3 {
+    display: none
+}
+
+#logoimg3 {
+    display: none;
+}
+
+#logotext3 {
     display: none;
 }
 
@@ -70,6 +99,11 @@ h5 {
     font-size: 28px;
 }
 
+.pushleftalittle {
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
 
 #container {
     display: grid;
@@ -86,12 +120,12 @@ h5 {
 
 
 #logo {
-      grid-area: lg;
-      margin: auto;
-      height: 105px;
-      width: 105px;
-      margin-top: -10px
-  }
+    grid-area: lg;
+    margin: auto;
+    height: 105px;
+    width: 105px;
+    margin-top: -10px
+}
 
 #logoimg {
     height: 100%;
@@ -114,7 +148,7 @@ h5 {
 #logotext {
     grid-area: lgt;
     text-align: center;
-    margin: auto;
+    /*margin: auto;*/
     margin-bottom: 0;
     height: 120px;
     padding: 0;
@@ -271,9 +305,11 @@ h5 {
 .smhide {
     display: none;
 }
+
 #smnavbar li {
 
 }
+
 /* -----------Start of Small Screen------------------------------------------------------------ */
 
 @media screen and (min-width: 576px) {
@@ -315,6 +351,7 @@ h5 {
         /*margin-top: -20px;*/
         vertical-align: middle;
     }
+
     #imgcardsm1 {
         grid-area: img1;
     }
@@ -463,9 +500,48 @@ h5 {
         grid-template-areas: "  . .  .  " " wb wb  wb  " "  bglgt bglgt bglgt  " " .  pc  .  " "  crc  crc  crc  " "  sel  .  last  " "  imglg1 imglg2 art1  " " imglg3 imglg4 art1  ";
     }
 
+    #logotext3 {
+        display: inline-block;
+        grid-area: lgt;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 0;
+        height: 120px;
+        padding: 0;
+    }
+
+    #whitebar3 {
+        display: inline-block;
+        grid-area: wb;
+    }
+
+    #logo3 {
+        display: inline-block;
+        grid-area: lg;
+        margin: auto;
+        height: 105px;
+        width: 105px;
+        margin-top: -10px
+    }
+
+    #logoimg3 {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        margin: auto;
+        /*margin-top: -20px;*/
+        vertical-align: middle;
+    }
+
+    #whitebar2, #logo2, #logoimg2, #logotext {
+        display: none;
+        grid-area: wb;
+    }
 
     #art {
         grid-area: art1;
+        width: 346px;
         display: inline-block;
         margin-top: -45px;
     }
@@ -521,12 +597,10 @@ h5 {
     /*#mlogotext {*/
     /*    display: inline-block;*/
     /*}*/
-
     /*#mlogoflex{*/
     /*    list-style: none;*/
     /*}*/
-
-/* end of styling for new ul */
+    /* end of styling for new ul */
 }
 
 /*----------For Extra Large Screens -----------------------------------------------------------*/
@@ -549,3 +623,4 @@ h5 {
 
 
 }
+

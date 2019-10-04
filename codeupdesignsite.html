@@ -18,9 +18,8 @@
 
 <header></header>
 <main>
-
+    <!--whitebar with logo only for XS screens------------------------------------->
     <div id="container">
-        <!-----------------------added ul-smnavbar to div-whitebar. kept logo in div as 3rd li----------------------------------------->
         <div id="whitebar" style="height:60px; width: 100vw; margin-top: 55px;">
 
             <div id="logo" class="xshide">
@@ -28,41 +27,45 @@
             </div>
         </div>
 
-
+        <!--whitebar and nav layoput for sm screen------------------------------------->
         <div id="whitebar2" style="height:60px; width: 100vw; margin-top: 55px;">
             <ul id="smnavbar" class="abel"
                 style="display: flex; list-style-type: none; justify-content: space-evenly; align-items: center; width: 75%; margin: -10px auto; padding: 0">
-                <li>SERVICES</li>
-                <li>WORK</li>
-                <li>
+                <li class="hover">SERVICES</li>
+                <li class="hover">WORK</li>
+                <li class="hover">
                     <div id="logo2">
                         <img src="assets/logo.png" id="logoimg2" alt="logo">
                     </div>
                 </li>
-                <li>BLOG</li>
-                <li>CONTACT</li>
+                <li class="hover">BLOG</li>
+                <li class="hover">CONTACT</li>
             </ul>
         </div>
 
-<!--        going to rework this into navbar for last 2 sizes by changing order of li and margins-->
+        <!--Whitebar header and navbar for lg and XL screens-------------------------------------->
+        <div id="whitebar3" style="height:60px; width: 100vw; margin-top: 55px;">
+            <ul id="smnavbar3" class="abel"
+                style="display: flex; list-style-type: none; justify-content: space-evenly; align-items: center; width: 950px; margin: -30px auto; padding: 0; line-height: 60px;">
+                <li style=>
+                    <div id="logo3">
+                        <img src="assets/logo.png" id="logoimg3" alt="logo" style="margin-top:10px">
+                    </div>
+                </li>
+                <li style="margin-right:auto; margin-left: 10px; margin-top: -10px;">
+                    <div id="logotext3" style="">
+                        <h3 class="abel"> codeup design </h3>
+                    </div>
+                </li>
+                <li class="pushleftalittle hover">SERVICES</li>
+                <li class="pushleftalittle hover">WORK</li>
+                <li class="pushleftalittle hover">BLOG</li>
+                <li class="pushleftalittle hover">CONTACT</li>
+            </ul>
+        </div>
 
-<!--        <div id="whitebar2" style="height:60px; width: 100vw; margin-top: 55px;">-->
-<!--            <ul id="smnavbar" class="abel"-->
-<!--                style="display: flex; list-style-type: none; justify-content: space-evenly; align-items: center; width: 75%; margin: -10px auto; padding: 0">-->
-<!--                <li>SERVICES</li>-->
-<!--                <li>WORK</li>-->
-<!--                <li>-->
-<!--                    <div id="logo2">-->
-<!--                        <img src="assets/logo.png" id="logoimg2" alt="logo">-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--                <li>BLOG</li>-->
-<!--                <li>CONTACT</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-
-
-        <div id="logotext" class>
+        <!--logo text and navbar for xs screens------------------------------------->
+        <div id="logotext">
             <h3 class="abel"> codeup design </h3>
         </div>
 
@@ -70,26 +73,14 @@
         <div id="smlogotext" class="xshide">
 
             <ul id="smlogoflex" class="abel">
-                <li>SERVICES</li>
-                <li>WORK</li>
-                <li>BLOG</li>
-                <li>CONTACT</li>
+                <li class="hover">SERVICES</li>
+                <li class="hover">WORK</li>
+                <li class="hover">BLOG</li>
+                <li class="hover">CONTACT</li>
             </ul>
 
         </div>
 
-        <!------ This is the new UL I'm messing with ----->
-        <!--        <div id="mlogotext" class="smhide">-->
-
-        <!--            <ul id="mlogoflex" class="abel">-->
-        <!--                <li>SERVICES</li>-->
-        <!--                <li>WORK</li>-->
-        <!--                <li>BLOG</li>-->
-        <!--                <li>CONTACT</li>-->
-        <!--            </ul>-->
-
-        <!--        </div>-->
-        <!------ end of the ul ----->
 
         <div id="biglogotext">
             <h3 class="anton"> VISUAL DESIGN & <br> WEB DEVELOPMENT</h3>
@@ -98,20 +89,20 @@
         <div id="parkcity">
             <h4 class="anton"> FROM PARK CITY, UTAH</h4>
         </div>
-
-        <div class="colorcircles leftcircle topcircle xshide" id="redcircle">
+        <!--square of colored circle divs for xs screens------------------------------------->
+        <div class="colorcircles leftcircle topcircle xshide " id="redcircle">
             <span class="circletext anton xshide">DESIGN</span>
         </div>
 
-        <div class="colorcircles rightcircle topcircle xshide" id="yellowcircle">
+        <div class="colorcircles rightcircle topcircle xshide " id="yellowcircle">
             <span class="circletext anton xshide">DEVELOP</span>
         </div>
 
-        <div class="colorcircles leftcircle bottomcircle xshide" id="greencircle">
+        <div class="colorcircles leftcircle bottomcircle xshide " id="greencircle">
             <span class="circletext anton xshide">SUPPORT</span>
         </div>
 
-        <div class="colorcircles rightcircle bottomcircle xshide" id="bluecircle">
+        <div class="colorcircles rightcircle bottomcircle xshide " id="bluecircle">
             <span class="circletext anton xshide">HOST</span>
         </div>
 
@@ -126,7 +117,7 @@
         <div id="featuredproject" class="xshide">
             <span class="abel"> FEATURED PROJECT </span>
         </div>
-
+        <!--SM circle bar for xs screens -------------------------------------->
         <div id="smcirclebar" class="xshide">
             <ul class="center">
                 <li>
@@ -143,6 +134,7 @@
                 </li>
             </ul>
         </div>
+        <!-- -----  Horizontal circle divs for sm, lg, and xl layouts------------------------------------->
         <div id="smcircrow">
             <ul>
                 <li>
@@ -160,13 +152,13 @@
             </ul>
             <hr id="hrsmall">
         </div>
-<!--image cards starting at SM size------------------->
+        <!--image cards starting at SM size------------------------------>
         <div id="imgcardsm1" class="xshide smhide">
             <div><img class="imgsm" src="assets/images/apple-ipad.jpg" alt="apples"></div>
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
-
+            <!--sm circle flex bar for all image cards, used multiple times -->
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between; text-align: center">
+                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between; text-align: center">
                     <li>
                         <div class="smallcircssm anton red">D</div>
                     </li>
@@ -187,7 +179,7 @@
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
                     <li>
                         <div id="smallredsm" class="smallcircssm anton red ">D</div>
                     </li>
@@ -208,7 +200,7 @@
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -229,7 +221,7 @@
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -246,7 +238,7 @@
             </div>
         </div>
 
-        <!--------------Beginning of Large Page layout------------------>
+        <!--------------Beginning of Large Page layout--------------------------------------->
         <div id="thelast">
             <span class="abel">THE LAST</span>
         </div>
@@ -255,7 +247,7 @@
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -276,7 +268,7 @@
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -293,11 +285,11 @@
             </div>
         </div>
         <div id="imgcardlg3">
-            <div id="manpicdiv"><img class="imgsm" src="assets/images/man.png" alt="man"></div>
+            <div id="manpicdiv2"><img class="imgsm" src="assets/images/man.png" alt="man"></div>
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -318,7 +310,7 @@
             <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -334,7 +326,7 @@
                 </ul>
             </div>
         </div>
-
+        <!-- articles and social media pane for lg and xl displays -------------------------------->
         <div id="art">
             <div class="thumb1" style="float: left; width: 95px; height: 95px; margin-top: 50px; margin-right: 10px;">
                 <img src="assets/images/mobile-phone.png" alt="phone" style="width: 100%; float:left">
@@ -372,3 +364,4 @@
 
 </body>
 </html>
+
