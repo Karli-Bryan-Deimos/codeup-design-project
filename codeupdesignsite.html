@@ -19,8 +19,9 @@
 <header></header>
 <main>
     <!--whitebar with logo only for XS screens------------------------------------->
+
     <div id="container">
-        <div id="whitebar" style="height:60px; width: 100vw; margin-top: 55px;">
+        <div id="whitebar" class="whitebar">
 
             <div id="logo" class="xshide">
                 <img src="assets/logo.png" id="logoimg" alt="logo">
@@ -28,32 +29,32 @@
         </div>
 
         <!--whitebar and nav layoput for sm screen------------------------------------->
-        <div id="whitebar2" style="height:60px; width: 100vw; margin-top: 55px;">
-            <ul id="smnavbar" class="abel"
-                style="display: flex; list-style-type: none; justify-content: space-evenly; align-items: center; width: 75%; margin: -10px auto; padding: 0">
-                <li class="hover">SERVICES</li>
-                <li class="hover">WORK</li>
-                <li class="hover">
+
+        <div id="whitebar2" class="whitebar">
+            <ul id="smnavbar" class="abel smnavbar">
+                <li class="hover navcenter">SERVICES</li>
+                <li class="hover navcenter">WORK</li>
+                <li class="hover navcenter">
                     <div id="logo2">
                         <img src="assets/logo.png" id="logoimg2" alt="logo">
                     </div>
                 </li>
-                <li class="hover">BLOG</li>
-                <li class="hover">CONTACT</li>
+                <li class="hover navcenter">BLOG</li>
+                <li class="hover navcenter">CONTACT</li>
             </ul>
         </div>
 
         <!--Whitebar header and navbar for lg and XL screens-------------------------------------->
-        <div id="whitebar3" style="height:60px; width: 100vw; margin-top: 55px;">
-            <ul id="smnavbar3" class="abel"
-                style="display: flex; list-style-type: none; justify-content: space-evenly; align-items: center; width: 950px; margin: -30px auto; padding: 0; line-height: 60px;">
-                <li style=>
+
+        <div id="whitebar3" class="whitebar">
+            <ul id="smnavbar3" class="abel smnavbar3">
+                <li>
                     <div id="logo3">
-                        <img src="assets/logo.png" id="logoimg3" alt="logo" style="margin-top:10px">
+                        <img src="assets/logo.png" id="logoimg3" alt="logo">
                     </div>
                 </li>
-                <li style="margin-right:auto; margin-left: 10px; margin-top: -10px;">
-                    <div id="logotext3" style="">
+                <li id="listyle1">
+                    <div id="logotext3">
                         <h3 class="abel"> codeup design </h3>
                     </div>
                 </li>
@@ -65,6 +66,7 @@
         </div>
 
         <!--logo text and navbar for xs screens------------------------------------->
+
         <div id="logotext">
             <h3 class="abel"> codeup design </h3>
         </div>
@@ -89,7 +91,9 @@
         <div id="parkcity">
             <h4 class="anton"> FROM PARK CITY, UTAH</h4>
         </div>
+
         <!--square of colored circle divs for xs screens------------------------------------->
+
         <div class="colorcircles leftcircle topcircle xshide " id="redcircle">
             <span class="circletext anton xshide">DESIGN</span>
         </div>
@@ -105,13 +109,18 @@
         <div class="colorcircles rightcircle bottomcircle xshide " id="bluecircle">
             <span class="circletext anton xshide">HOST</span>
         </div>
+        <!-- selected work for XS and SMALL displays ----------------------->
 
         <div id="selectedwork">
             <span class="abel"> SELECTED WORK </span>
         </div>
 
+        <!-- selected work for MEDIUM and LARGE displays ----------------------->
+        <div id="selectedwork2">
+            <span class="abel"> SELECTED WORK </span>
+        </div>
         <div id="imgformobilescreen" class="xshide">
-            <img src="assets/images/apple-ipad.jpg" alt="apples" style="width:100%; height:100%;">
+            <img src="assets/images/apple-ipad.jpg" alt="apples" class="onehundred">
         </div>
 
         <div id="featuredproject" class="xshide">
@@ -155,10 +164,10 @@
         <!--image cards starting at SM size------------------------------>
         <div id="imgcardsm1" class="xshide smhide">
             <div><img class="imgsm" src="assets/images/apple-ipad.jpg" alt="apples"></div>
-            <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
+            <span class="abel leftspan"> FEATURED PROJECT</span>
             <!--sm circle flex bar for all image cards, used multiple times -->
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between; text-align: center">
+                <ul class="lowimgflex1">
                     <li>
                         <div class="smallcircssm anton red">D</div>
                     </li>
@@ -175,11 +184,11 @@
             </div>
         </div>
         <div id="imgcardsm2">
-            <div><img class="imgsm" src="assets/images/macbook.jpg" alt="macbook"></div>
-            <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
+            <div><img class="imgsm leftmargin10" src="assets/images/macbook.jpg" alt="macbook"></div>
+            <span class="abel rightspan"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul class="lowimgflex2">
                     <li>
                         <div id="smallredsm" class="smallcircssm anton red ">D</div>
                     </li>
@@ -197,10 +206,10 @@
         </div>
         <div id="imgcardsm3">
             <div id="manpicdiv"><img class="imgsm" src="assets/images/man.png" alt="man"></div>
-            <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
+            <span class="abel leftspan"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul class="lowimgflex3">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -217,11 +226,11 @@
             </div>
         </div>
         <div id="imgcardsm4" class="mdhide">
-            <div><img class="imgsm" src="assets/images/security.jpg" alt="security"></div>
-            <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
+            <div><img class="imgsm leftmargin10" src="assets/images/security.jpg" alt="security"></div>
+            <span class="abel rightspan"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul class="lowimgflex4">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -244,10 +253,10 @@
         </div>
         <div id="imgcardlg1">
             <div><img class="imgsm" src="assets/images/apple-ipad.jpg" alt="apples"></div>
-            <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
+            <span class="abel lgcards"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul class="flexlg1">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -265,10 +274,10 @@
         </div>
         <div id="imgcardlg2">
             <div><img class="imgsm" src="assets/images/macbook.jpg" alt="macbook"></div>
-            <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
+            <span class="abel lgcards"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul class="flexlg2">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -286,10 +295,10 @@
         </div>
         <div id="imgcardlg3">
             <div id="manpicdiv2"><img class="imgsm" src="assets/images/man.png" alt="man"></div>
-            <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
+            <span class="abel lgcards"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul class="flexlg3">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -307,10 +316,10 @@
         </div>
         <div id="imgcardlg4" class="mdhide">
             <div><img class="imgsm" src="assets/images/security.jpg" alt="security"></div>
-            <span class="abel" style="margin-right: 0; display: inline-block"> FEATURED PROJECT</span>
+            <span class="abel lgcards"> FEATURED PROJECT</span>
 
             <div class="lowimgflexbar">
-                <ul style="display: flex; list-style-type: none; width: 30%; padding: 0; margin-right: 5%; float:right; margin-top: -20px; justify-content: space-between">
+                <ul class="flexlg4">
                     <li>
                         <div class="smallcircssm anton red ">D</div>
                     </li>
@@ -328,28 +337,28 @@
         </div>
         <!-- articles and social media pane for lg and xl displays -------------------------------->
         <div id="art">
-            <div class="thumb1" style="float: left; width: 95px; height: 95px; margin-top: 50px; margin-right: 10px;">
-                <img src="assets/images/mobile-phone.png" alt="phone" style="width: 100%; float:left">
+            <div class="thumb1" id="thumblg1">
+                <img src="assets/images/mobile-phone.png" alt="phone" class="wideFloatL">
             </div>
-            <div style="clear:right">
-                <h5 class="anton" style="clear:right; letter-spacing: 0">THE ADMIN BAR AND ABSOLUTE POSITIONING</h5>
+            <div class="Rclear">
+                <h5 class="anton Rzerospace">THE ADMIN BAR AND ABSOLUTE POSITIONING</h5>
             </div>
 
-            <div class="thumb1" style="float: left; width: 95px; height: 95px; margin-top: 5px; margin-right: 10px;">
-                <img src="assets/images/head.jpg" alt="phone" style="width: 100%; float:left">
+            <div class="thumb1" id="thumblg2">
+                <img src="assets/images/head.jpg" alt="phone" class="wideFloatL">
             </div>
-            <div style="clear:right">
-                <h5 class="anton" style="clear:right; letter-spacing: 0">NIBBLER AWESOME WEBSITE TESTING</h5>
+            <div  class="Rclear">
+                <h5 class="anton Rzerospace">NIBBLER AWESOME WEBSITE TESTING</h5>
             </div>
-            <div class="thumb1" style="float: left; width: 95px; height: 95px; margin-top: 5px; margin-right: 10px;">
-                <img src="assets/images/ipad.jpg" alt="phone" style="width: 100%; float:left">
+            <div class="thumb1" id="thumblg3">
+                <img src="assets/images/ipad.jpg" alt="phone" class="wideFloatL">
             </div>
-            <div style="clear:right">
-                <h5 class="anton" style="clear:right; letter-spacing: 0">HOW TO GET GOOGLE TO LIKE YOU</h5>
+            <div  class="Rclear">
+                <h5 class="anton Rzerospace">HOW TO GET GOOGLE TO LIKE YOU</h5>
             </div>
 
             <div>
-                <span class="abel"> <i class="fab fa-twitter" style="color: #1FA1F3;"></i> LAST TWEET</span>
+                <span class="abel"> <i class="fab fa-twitter" id="tweeter"></i> LAST TWEET</span>
                 <p class="abel"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci </p>
             </div>

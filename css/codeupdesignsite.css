@@ -5,9 +5,194 @@ html {
     box-sizing: border-box;
 }
 
+.whitebar {
+    height: 60px;
+    width: 100vw;
+    margin-top: 55px;
+}
+
+.smnavbar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    margin: -10px auto;
+    padding: 0;
+}
+
+.smnavbar3 {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 950px;
+    margin: -30px auto;
+    padding: 0;
+    line-height: 60px;
+}
+
+.navcenter {
+    width: 105px;
+    text-align: center;
+}
+
+.lowimgflex1 {
+    display: flex;
+    list-style-type: none;
+    width: 35%;
+    padding: 0;
+    margin-right: 5%;
+    float: right;
+    margin-top: -20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lowimgflex2 {
+    display: flex;
+    list-style-type: none;
+    width: 35%;
+    padding: 0;
+    margin-right: -7%;
+    float:right;
+    margin-top: -20px;
+    justify-content: space-between;
+}
+
+
+.lowimgflex3 {
+    display: flex;
+    list-style-type: none;
+    width: 35%;
+    padding: 0;
+    margin-right: 5%;
+    float:right;
+    margin-top: -20px;
+    justify-content: space-between
+}
+
+.lowimgflex4 {
+    display: flex;
+    list-style-type: none;
+    width: 35%;
+    padding: 0;
+    margin-right: -7%;
+    float:right;
+    margin-top: -20px;
+    justify-content: space-between
+
+}
+
+.flexlg1 {
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    padding: 0;
+    margin-right: 5%;
+    float:right;
+    margin-top: -20px;
+    justify-content: space-between
+}
+
+.flexlg2 {
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    padding: 0;
+    margin-right: 5%;
+    float:right;
+    margin-top: -20px;
+    justify-content: space-between
+}
+
+.flexlg3 {
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    padding: 0;
+    margin-right: 5%;
+    float:right;
+    margin-top: -20px;
+    justify-content: space-between;
+}
+
+.flexlg4 {
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    padding: 0;
+    margin-right: 5%;
+    float:right;
+    margin-top: -20px;
+    justify-content: space-between
+}
+
+.lgcards {
+    margin-right: 0;
+    display: inline-block;
+}
+
+#thumblg1 {
+    float: left;
+    width: 95px;
+    height: 95px;
+    margin-top: 50px;
+    margin-right: 10px
+}
+
+#thumblg2 {
+    float: left;
+    width: 95px;
+    height: 95px;
+    margin-top: 5px;
+    margin-right: 10px
+}
+ #thumblg3 {
+     float: left;
+     width: 95px;
+     height: 95px;
+     margin-top: 5px;
+     margin-right: 10px
+ }
+
+ .Rclear {
+ clear: right;
+}
+
+ .wideFloatL {
+ width: 100%;
+     float: left;
+}
+
+ .Rzerospace {
+     clear:right;
+     letter-spacing: 0
+}
+
+.leftmargin10 {
+    margin-left: 10%
+}
+
+#tweeter {
+    color: #1FA1F3
+}
+
+
+
+
+
+.onehundred {
+    width:100%;
+    height:100%;
+}
+
+#selectedwork2 {
+    display: none;
+}
 
 .hover {
-    transition: all .5s;
+    transition: all 1.5s;
 }
 
 .hover:hover {
@@ -180,6 +365,7 @@ h5 {
 #parkcity {
     grid-area: pc;
     text-align: center;
+    /*white-space: nowrap;*/
 
 
 }
@@ -313,7 +499,6 @@ h5 {
 /* -----------Start of Small Screen------------------------------------------------------------ */
 
 @media screen and (min-width: 576px) {
-
 
     #container {
         display: grid;
@@ -454,9 +639,10 @@ h5 {
     #hrsmall {
         display: inline-block;
         color: #E6E6E6;
-        width: 84%;
+        width: 96%;
         text-align: center;
-        margin-left: 8%;
+        margin-left: 2%;
+        margin-bottom: 2%;
     }
 
     .mdhide {
@@ -491,13 +677,13 @@ h5 {
         display: grid;
         margin: 0;
         padding: 0;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 100px repeat(3, 1fr) 100px;
         justify-content: center;
         align-content: center;
         grid-gap: 0;
         height: 100%;
         width: 100vw;
-        grid-template-areas: "  . .  .  " " wb wb  wb  " "  bglgt bglgt bglgt  " " .  pc  .  " "  crc  crc  crc  " "  sel  .  last  " "  imglg1 imglg2 art1  " " imglg3 imglg4 art1  ";
+        grid-template-areas: ".  . .  .  ." "wb wb wb  wb  wb" ".  bglgt bglgt bglgt  ." ". pc  pc  pc  ." ".  crc  crc  crc  ." ".  sel  .  last  ." ".  imglg1 imglg2 art1  ." ". imglg3 imglg4 art1  .";
     }
 
     #logotext3 {
@@ -532,11 +718,29 @@ h5 {
         margin: auto;
         /*margin-top: -20px;*/
         vertical-align: middle;
+        margin-top: 10px
+    }
+
+    #listyle1 {
+        margin-right: auto;
+        margin-left: 10px;
+        margin-top: -10px
     }
 
     #whitebar2, #logo2, #logoimg2, #logotext {
         display: none;
         grid-area: wb;
+    }
+
+    .rightspan {
+        margin-left: 10%;
+        display: inline-block
+    }
+
+
+    .leftspan {
+        margin-right: 0;
+        display: inline-block
     }
 
     #art {
@@ -588,39 +792,39 @@ h5 {
         margin-left: 200px;
         margin-right: 200px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 0;
     }
 
-
-    /*!* this is for the new ul*!*/
-    /*#mlogotext {*/
-    /*    display: inline-block;*/
-    /*}*/
-    /*#mlogoflex{*/
-    /*    list-style: none;*/
-    /*}*/
-    /* end of styling for new ul */
-}
-
-/*----------For Extra Large Screens -----------------------------------------------------------*/
-
-@media screen and (min-width: 1200px) {
-
-    #container {
-        display: grid;
-        margin: 0;
-        padding: 0;
-        grid-template-columns: 12% repeat(3, 1fr) 12%;
-        justify-content: center;
-        align-content: center;
-        grid-gap: 0;
-        height: 100%;
-        width: 100vw;
-        grid-template-areas: ".  .  .  .  ." "wb wb wb wb wb" ". bglgt bglgt bglgt ." ".  .  pc  .  ." ".  crc  crc  crc  ." ".  sel  .  last  ." ".  imglg1 imglg2 art1  ." ". imglg3 imglg4 art1  .";
-
+    #selectedwork {
+        display: none;
     }
 
+    #selectedwork2 {
+        display: inline-block;
+        grid-area: sel;
+        /*text-align: center;*/
+        margin-bottom: 30px;
+        white-space: nowrap;
+    }
 
-}
+    /*----------For Extra Large Screens -----------------------------------------------------------*/
+    @media screen and (min-width: 1200px) {
+
+        #container {
+            display: grid;
+            margin: 0;
+            padding: 0;
+            grid-template-columns: 12% repeat(3, 1fr) 12%;
+            justify-content: center;
+            align-content: center;
+            grid-gap: 0;
+            height: 100%;
+            width: 100vw;
+            grid-template-areas: ".  .  .  .  ." "wb wb wb wb wb" ". bglgt bglgt bglgt ." ".  .  pc  .  ." ".  crc  crc  crc  ." ".  sel  .  last  ." ".  imglg1 imglg2 art1  ." ". imglg3 imglg4 art1  .";
+
+        }
+
+
+    }
 
