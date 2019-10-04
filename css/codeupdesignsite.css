@@ -55,7 +55,7 @@ html {
     width: 35%;
     padding: 0;
     margin-right: -7%;
-    float:right;
+    float: right;
     margin-top: -20px;
     justify-content: space-between;
 }
@@ -67,7 +67,7 @@ html {
     width: 35%;
     padding: 0;
     margin-right: 5%;
-    float:right;
+    float: right;
     margin-top: -20px;
     justify-content: space-between
 }
@@ -78,7 +78,7 @@ html {
     width: 35%;
     padding: 0;
     margin-right: -7%;
-    float:right;
+    float: right;
     margin-top: -20px;
     justify-content: space-between
 
@@ -90,7 +90,7 @@ html {
     width: 30%;
     padding: 0;
     margin-right: 5%;
-    float:right;
+    float: right;
     margin-top: -20px;
     justify-content: space-between
 }
@@ -101,7 +101,7 @@ html {
     width: 30%;
     padding: 0;
     margin-right: 5%;
-    float:right;
+    float: right;
     margin-top: -20px;
     justify-content: space-between
 }
@@ -112,7 +112,7 @@ html {
     width: 30%;
     padding: 0;
     margin-right: 5%;
-    float:right;
+    float: right;
     margin-top: -20px;
     justify-content: space-between;
 }
@@ -123,7 +123,7 @@ html {
     width: 30%;
     padding: 0;
     margin-right: 5%;
-    float:right;
+    float: right;
     margin-top: -20px;
     justify-content: space-between
 }
@@ -131,6 +131,21 @@ html {
 .lgcards {
     margin-right: 0;
     display: inline-block;
+}
+
+#rightspan1 {
+    margin-left: 10%;
+    display: inline-block;
+}
+
+#rightspan2 {
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.leftspan {
+    margin-right: 0;
+    display: inline-block
 }
 
 #thumblg1 {
@@ -148,26 +163,27 @@ html {
     margin-top: 5px;
     margin-right: 10px
 }
- #thumblg3 {
-     float: left;
-     width: 95px;
-     height: 95px;
-     margin-top: 5px;
-     margin-right: 10px
- }
 
- .Rclear {
- clear: right;
+#thumblg3 {
+    float: left;
+    width: 95px;
+    height: 95px;
+    margin-top: 5px;
+    margin-right: 10px
 }
 
- .wideFloatL {
- width: 100%;
-     float: left;
+.Rclear {
+    clear: right;
 }
 
- .Rzerospace {
-     clear:right;
-     letter-spacing: 0
+.wideFloatL {
+    width: 100%;
+    float: left;
+}
+
+.Rzerospace {
+    clear: right;
+    letter-spacing: 0
 }
 
 .leftmargin10 {
@@ -179,12 +195,9 @@ html {
 }
 
 
-
-
-
 .onehundred {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
 #selectedwork2 {
@@ -300,7 +313,7 @@ h5 {
     grid-gap: 0;
     height: 100%;
     width: 100vw;
-    grid-template-areas: ' .  .  .  .  .  .  .  .  .  .  .  . ' ' wb wb wb wb  wb wb wb  wb wb wb  wb wb  ' ' .  .  lgt lgt lgt lgt  lgt lgt lgt lgt . . ' ' .  . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . . ' ' bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt ' ' . pc pc pc pc pc pc pc pc pc pc . ' '.  redc redc redc redc redc yellowc yellowc yellowc yellowc yellowc .' '.  greenc greenc greenc greenc greenc bluec bluec bluec bluec bluec . ' '.   .  .  sel sel sel sel sel  sel  .  .  .' ' . imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob .' '. proj proj proj proj .  bar bar bar bar bar  .';
+    grid-template-areas: ' .  .  .  .  .  .  .  .  .  .  .  . '  ' wb wb wb wb  wb wb wb  wb wb wb  wb wb  ' ' .  .  lgt lgt lgt lgt  lgt lgt lgt lgt . . ' ' .  . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . . ' ' bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt ' ' . pc pc pc pc pc pc pc pc pc pc . ' '.  redc redc redc redc redc yellowc yellowc yellowc yellowc yellowc .' '.  greenc greenc greenc greenc greenc bluec bluec bluec bluec bluec . ' '.   .  .  sel sel sel sel sel  sel  .  .  .' ' . imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob .' '. proj proj proj proj .  bar bar bar bar bar  .';
 }
 
 
@@ -365,7 +378,6 @@ h5 {
 #parkcity {
     grid-area: pc;
     text-align: center;
-    /*white-space: nowrap;*/
 
 
 }
@@ -533,7 +545,6 @@ h5 {
         width: 100%;
         z-index: 2;
         margin: auto;
-        /*margin-top: -20px;*/
         vertical-align: middle;
     }
 
@@ -732,16 +743,7 @@ h5 {
         grid-area: wb;
     }
 
-    .rightspan {
-        margin-left: 10%;
-        display: inline-block
-    }
 
-
-    .leftspan {
-        margin-right: 0;
-        display: inline-block
-    }
 
     #art {
         grid-area: art1;
@@ -803,7 +805,6 @@ h5 {
     #selectedwork2 {
         display: inline-block;
         grid-area: sel;
-        /*text-align: center;*/
         margin-bottom: 30px;
         white-space: nowrap;
     }
@@ -824,7 +825,9 @@ h5 {
             grid-template-areas: ".  .  .  .  ." "wb wb wb wb wb" ". bglgt bglgt bglgt ." ".  .  pc  .  ." ".  crc  crc  crc  ." ".  sel  .  last  ." ".  imglg1 imglg2 art1  ." ". imglg3 imglg4 art1  .";
 
         }
-
-
     }
+}
+
+
+
 
