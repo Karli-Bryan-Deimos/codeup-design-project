@@ -255,8 +255,11 @@ h5 {
 .smhide {
     display: none;
 }
+#smnavbar li {
+    /*^^^^^^^ identifier for new navbar^^^^^^^^^*/
 
-/* --------Start of Small Screen---------- */
+}
+/* -----------Start of Small Screen------------------------------------------------------------ */
 
 @media screen and (min-width: 576px) {
 
@@ -404,7 +407,7 @@ h5 {
 }
 
 
-/* --------Media Query for Large Screens------------ */
+/* -------Media Query for Large Screens---------------------------------------------------------------- */
 
 @media screen and (min-width: 992px) {
 
@@ -475,19 +478,19 @@ h5 {
     }
 
 
-    /* this is for the new ul*/
-    #mlogotext {
-        display: inline-block;
-    }
+    /*!* this is for the new ul*!*/
+    /*#mlogotext {*/
+    /*    display: inline-block;*/
+    /*}*/
 
-    #mlogoflex{
-        list-style: none;
-    }
+    /*#mlogoflex{*/
+    /*    list-style: none;*/
+    /*}*/
 
 /* end of styling for new ul */
 }
 
-/*-----For Extra Large Screens -----*/
+/*----------For Extra Large Screens -----------------------------------------------------------*/
 
 @media screen and (min-width: 1200px) {
 

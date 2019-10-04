@@ -20,12 +20,20 @@
 <main>
 
     <div id="container">
-
+<!-----------------------added ul-smnavbar to div-whitebar. kept logo in div as 3rd li----------------------------------------->
 
         <div id="whitebar" style="height:60px; width: 100vw; margin-top: 55px;">
-            <div id="logo">
-                <img src="assets/logo.png" id="logoimg" alt="logo">
-            </div>
+            <ul id="smnavbar" class="abel" style="display: flex; list-style-type: none; justify-content: space-evenly;">
+                <li>SERVICES</li>
+                <li>WORK</li>
+                    <li>
+                        <div id="logo">
+                            <img src="assets/logo.png" id="logoimg" alt="logo">
+                        </div>
+                    </li>
+                <li>BLOG</li>
+                <li>CONTACT</li>
+            </ul>
         </div>
 
         <div id="logotext">
@@ -33,22 +41,9 @@
         </div>
 
 
-
         <div id="smlogotext" class="xshide">
 
-        <ul id="smlogoflex" class="abel">
-            <li>SERVICES</li>
-            <li>WORK</li>
-            <li>BLOG</li>
-            <li>CONTACT</li>
-        </ul>
-
-    </div>
-
-<!------ This is the new UL I'm messing with ----->
-        <div id="mlogotext" class="smhide">
-
-            <ul id="mlogoflex" class="abel">
+            <ul id="smlogoflex" class="abel">
                 <li>SERVICES</li>
                 <li>WORK</li>
                 <li>BLOG</li>
@@ -56,7 +51,19 @@
             </ul>
 
         </div>
-<!------ end of the ul ----->
+
+        <!------ This is the new UL I'm messing with ----->
+        <!--        <div id="mlogotext" class="smhide">-->
+
+        <!--            <ul id="mlogoflex" class="abel">-->
+        <!--                <li>SERVICES</li>-->
+        <!--                <li>WORK</li>-->
+        <!--                <li>BLOG</li>-->
+        <!--                <li>CONTACT</li>-->
+        <!--            </ul>-->
+
+        <!--        </div>-->
+        <!------ end of the ul ----->
 
         <div id="biglogotext">
             <h3 class="anton"> VISUAL DESIGN & <br> WEB DEVELOPMENT</h3>
@@ -320,13 +327,14 @@
                 <img src="assets/images/ipad.jpg" alt="phone" style="width: 100%; float:left">
             </div>
             <div style="clear:right">
-                    <h5 class="anton" style="clear:right; letter-spacing: 0">HOW TO GET GOOGLE TO LIKE YOU</h5>
+                <h5 class="anton" style="clear:right; letter-spacing: 0">HOW TO GET GOOGLE TO LIKE YOU</h5>
             </div>
 
-        <div>
-            <span class="abel"> <i class="fab fa-twitter" style="color: #1FA1F3;"></i> LAST TWEET</span>
-            <p class="abel"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci </p>
-        </div>
+            <div>
+                <span class="abel"> <i class="fab fa-twitter" style="color: #1FA1F3;"></i> LAST TWEET</span>
+                <p class="abel"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci </p>
+            </div>
         </div>
 
     </div>
