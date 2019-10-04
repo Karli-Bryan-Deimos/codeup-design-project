@@ -9,8 +9,6 @@ html {
 body {
     background-color: #F0F0F0;
     margin: 0;
-    /*align-items: center;*/
-
 }
 
 
@@ -67,36 +65,18 @@ h5 {
     grid-template-columns: 20px repeat(10, 1fr) 20px;
     justify-content: center;
     align-content: center;
-    /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
     grid-gap: 0;
     height: 100%;
     width: 100vw;
-    grid-template-areas: ' .  .  .  .  .  .  .  .  .  .  .  . '
-    ' wb wb wb wb  wb wb wb  wb wb wb  wb wb  '
-    ' .  .  lgt lgt lgt lgt  lgt lgt lgt lgt . . '
-    ' .  . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . . '
-    ' bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt '
-    ' . pc pc pc pc pc pc pc pc pc pc . '
-    '.  redc redc redc redc redc yellowc yellowc yellowc yellowc yellowc .'
-    '.  greenc greenc greenc greenc greenc bluec bluec bluec bluec bluec . '
-    '.   .  .  sel sel sel sel sel  sel  .  .  .'
-    ' . imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob .'
-    '. proj proj proj proj .  bar bar bar bar bar  .';
+    grid-template-areas: ' .  .  .  .  .  .  .  .  .  .  .  . ' ' wb wb wb wb  wb wb wb  wb wb wb  wb wb  ' ' .  .  lgt lgt lgt lgt  lgt lgt lgt lgt . . ' ' .  . smlgt smlgt smlgt smlgt smlgt smlgt smlgt smlgt . . ' ' bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt ' ' . pc pc pc pc pc pc pc pc pc pc . ' '.  redc redc redc redc redc yellowc yellowc yellowc yellowc yellowc .' '.  greenc greenc greenc greenc greenc bluec bluec bluec bluec bluec . ' '.   .  .  sel sel sel sel sel  sel  .  .  .' ' . imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob .' '. proj proj proj proj .  bar bar bar bar bar  .';
 }
 
 
 #logo {
     grid-area: lg;
-    /*position: absolute;*/
-    /*margin-top: 180px;*/
-    /*margin-left: 50%;*/
-    /*transform: translateX(-50%);*/
     margin: auto;
     height: 105px;
     width: 105px;
-    /*align-items: center;*/
-    /*vertical-align: middle;*/
-
 }
 
 #logoimg {
@@ -104,24 +84,15 @@ h5 {
     width: 100%;
     z-index: 2;
     display: block;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*margin-top:*/
     margin: auto;
     margin-top: -20px;
     vertical-align: middle;
-
-    /*position: absolute;*/
-
 }
 
 #whitebar {
     grid-area: wb;
     background-color: white;
     width: 100%;
-    /*margin-left: 0;*/
-    /*display: flex;*/
-    /*text-align: center;*/
 }
 
 #logotext {
@@ -130,15 +101,9 @@ h5 {
     margin: auto;
     margin-bottom: 0;
     height: 120px;
-    /*transform: translateX(-50%);*/
     padding: 0;
-    /*white-space: nowrap;*/
-
 }
 
-#logotext h3 {
-    /*margin: auto;*/
-}
 
 #smlogotext {
     grid-area: smlgt;
@@ -155,25 +120,15 @@ h5 {
     height: 10px;
 }
 
-#smlogoflex li {
-    /*padding-left: 5px;*/
-    /*padding-right: 5px;*/
-}
-
 #biglogotext {
     grid-area: bglgt;
     text-align: center;
-    /*display: inline-block;*/
     height: 150px;
 }
 
-#biglogotext h3 {
-    /*margin: none;*/
-}
 
 #parkcity {
     grid-area: pc;
-    /*margin:auto;*/
     text-align: center;
 
 
@@ -190,18 +145,9 @@ h5 {
 
 .leftcircle {
     margin-right: -10%;
-    /*margin-left: 20px;*/
-    /*margin-left: 10%;*/
-    /*margin-left: 50%;*/
-    /*transform: translateX(-50%);*/
 
 }
 
-.rightcircle {
-    /*margin-right: 0%;*/
-    /*margin-right: 50%;*/
-    /*transform: translateX(-50%);*/
-}
 
 .topcircle {
     margin: auto;
@@ -214,41 +160,32 @@ h5 {
 }
 
 .circletext {
-    /*margin-top: 37%;*/
     color: white;
     line-height: 105px;
-
 }
 
 #redcircle {
     grid-area: redc;
     background-color: #E6563B;
     margin-right: 5px;
-
 }
 
 #yellowcircle {
     grid-area: yellowc;
     background-color: #EB9D3A;
     margin-left: 5px;
-
-
 }
 
 #greencircle {
     grid-area: greenc;
     background-color: #7CB06C;
     margin-right: 5px;
-
-
 }
 
 #bluecircle {
     grid-area: bluec;
     background-color: #00ABA9;
     margin-left: 5px;
-
-
 }
 
 #selectedwork {
@@ -256,7 +193,6 @@ h5 {
     text-align: center;
     margin-bottom: 30px;
     white-space: nowrap;
-
 }
 
 #imgformobilescreen {
@@ -268,18 +204,13 @@ h5 {
 
 #featuredproject {
     grid-area: proj;
-    /*margin-top: -30px;*/
     margin-bottom: 50px;
     white-space: nowrap;
-
-
 }
 
 #smcirclebar {
     grid-area: bar;
     margin-top: -10px;
-    /*display: flex;*/
-
 }
 
 #smcirclebar ul {
@@ -288,7 +219,6 @@ h5 {
     justify-content: space-between;
     text-align: center;
     line-height: 18px;
-
 }
 
 .smallcircs {
@@ -297,29 +227,9 @@ h5 {
     border-radius: 50%;
 }
 
-/*.lowimgflexbar {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
 
-/*#smallredxs {*/
-    /*!*background-color: #E6563B;*!*/
-/*}*/
-
-/*#smallyellowxs {*/
-    /*!*background-color: #EB9D3A;*!*/
-/*}*/
-
-/*#smallgreenxs {*/
-    /*!*background-color: #7CB06C;*!*/
-/*}*/
-
-/*#smallbluexs {*/
-    /*!*background-color: #00ABA9;*!*/
-/*}*/
-
-#smcircrow{
-    display:none;
+#smcircrow {
+    display: none;
 }
 
 #hrsmall {
@@ -329,8 +239,9 @@ h5 {
 #imgcardsm1, #imgcardsm2, #imgcardsm3, #imgcardsm4 {
     display: none;
 }
-#thelast{
-    display:none;
+
+#thelast {
+    display: none;
 }
 
 #imgcardlg1, #imgcardlg2, #imgcardlg3, #imgcardlg4 {
@@ -340,61 +251,43 @@ h5 {
 #art {
     display: none;
 }
-/* Start of Small Screen */
 
-@media screen and (min-width: 576px){
+.smhide {
+    display: none;
+}
+
+/* --------Start of Small Screen---------- */
+
+@media screen and (min-width: 576px) {
 
 
     #container {
         display: grid;
         margin: 0;
         padding: 0;
-        grid-template-columns:  repeat(8, 1fr);
+        grid-template-columns: repeat(8, 1fr);
         justify-content: center;
         align-content: center;
-        /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
         grid-gap: 0;
         height: 100%;
         width: 100vw;
-        grid-template-areas:
-                ' . . . . . . . . '
-                'wb wb wb wb wb wb wb wb '
-                '. . lgt lgt lgt lgt . . '
-                'bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt'
-                '. pc pc pc pc pc pc . '
-                '. crc crc crc crc crc crc .'
-                '. . . sel sel . . .'
-                '. img1 img1 img1 img2 img2 img2 .'
-                '. img3 img3 img3 img4 img4 img4 .';
-
-
-    /*   ------------------------------------- see on row 2, wbf1 and wbf2, we could use this to position the flexboxes for nav bar, we would have to add 2 ul's with ids, thoughts?------------------------------------------------*/
-    /*' . . . . . . . . '*/
-    /*'wb wbf1 wbf1 wb wbf2 wbf2 wb wb '*/
-    /*'. . lgt lgt lgt lgt . . '*/
-    /*'bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt'*/
-    /*'. pc pc pc pc pc pc . '*/
-    /*'. crc crc crc crc crc crc .'*/
-    /*'. . . sel sel . . .'*/
-    /*'. img1 img1 img1 img2 img2 img2 .'*/
-    /*'. img3 img3 img3 img4 img4 img4 .';*/
+        grid-template-areas: ' . . . . . . . . ' 'wb wb wb wb wb wb wb wb ' '. . lgt lgt lgt lgt . . ' 'bglgt bglgt bglgt bglgt bglgt bglgt bglgt bglgt' '. pc pc pc pc pc pc . ' '. crc crc crc crc crc crc .' '. . . sel sel . . .' '. img1 img1 img1 img2 img2 img2 .' '. img3 img3 img3 img4 img4 img4 .';
     }
 
     #imgcardsm1 {
         grid-area: img1;
     }
+
     #imgcardsm2 {
         grid-area: img2;
-
-
     }
+
     #imgcardsm3 {
         grid-area: img3;
-
     }
+
     #imgcardsm4 {
         grid-area: img4;
-
     }
 
     #imgcardsm1, #imgcardsm2, #imgcardsm3, #imgcardsm4 {
@@ -407,7 +300,6 @@ h5 {
         border-radius: 50%;
         line-height: 18px;
         text-align: center;
-
     }
 
     .imgsm {
@@ -418,94 +310,90 @@ h5 {
     }
 
 
-        br{
-            display: none;
-        }
+    br {
+        display: none;
+    }
 
-        #biglogotext{
-            white-space: nowrap;
-        }
+    #biglogotext {
+        white-space: nowrap;
+    }
 
-        /*this class hides elements on XS/mobile sized screens*/
-        .xshide{
-            display:none;
-        }
+    /*----this class hides elements on XS/mobile sized screens---*/
+    .xshide {
+        display: none;
+    }
 
-        #smcircrow{
-            display: inline-block;
-            grid-area: crc;
-            padding: 0;
-        }
+    #smcircrow {
+        display: inline-block;
+        grid-area: crc;
+        padding: 0;
+    }
 
-        #smcircrow ul{
-            display: flex;
-            justify-content: space-between;
-            padding: 0;
+    #smcircrow ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
 
+    #smcircrow ul li {
+        list-style: none;
 
-        }
+    }
 
-        #smcircrow ul li{
-           list-style: none;
-
-        }
-
-    #smcircrow ul li div{
+    #smcircrow ul li div {
         height: 105px;
         width: 105px;
         border-radius: 50%;
         border: 5px solid white;
         text-align: center;
-
     }
 
     #redcirclexs {
         grid-area: redc;
         background-color: #E6563B;
         margin-right: 5px;
-
     }
 
     #yellowcirclexs {
         grid-area: yellowc;
         background-color: #EB9D3A;
         margin-left: 5px;
-
-
     }
 
     #greencirclexs {
         grid-area: greenc;
         background-color: #7CB06C;
         margin-right: 5px;
-
-
     }
 
     #bluecirclexs {
         grid-area: bluec;
         background-color: #00ABA9;
         margin-left: 5px;
-
-
     }
 
     #hrsmall {
         display: inline-block;
         color: #E6E6E6;
-        width:84%;
+        width: 84%;
         text-align: center;
         margin-left: 8%;
+    }
 
+    .mdhide {
+        display: none;
     }
 
     .smhide {
         display: none;
     }
-    }
-    #thelast{
-        display:none;
-    }
+
+}
+
+#thelast {
+    display: none;
+}
+
 
 #imgcardlg1, #imgcardlg2, #imgcardlg3, #imgcardlg4 {
     display: none;
@@ -514,7 +402,9 @@ h5 {
 #art {
     display: none;
 }
-/* Media Query for Large Screens */
+
+
+/* --------Media Query for Large Screens------------ */
 
 @media screen and (min-width: 992px) {
 
@@ -525,24 +415,13 @@ h5 {
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         align-content: center;
-        /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
         grid-gap: 0;
         height: 100%;
         width: 100vw;
-        grid-template-areas:
-                "  . .  .  "
-                " wb wb  wb  "
-                "  bglgt bglgt bglgt  "
-                " .  pc  .  "
-                "  crc  crc  crc  "
-                "  sel  .  last  "
-                "  imglg1 imglg2 art1  "
-                " imglg3 imglg4 art1  ";
-
+        grid-template-areas: "  . .  .  " " wb wb  wb  " "  bglgt bglgt bglgt  " " .  pc  .  " "  crc  crc  crc  " "  sel  .  last  " "  imglg1 imglg2 art1  " " imglg3 imglg4 art1  ";
     }
 
-    /*add grid area for new img and art*/
-    /*need to add "last"*/
+
     #art {
         grid-area: art1;
         display: inline-block;
@@ -568,16 +447,17 @@ h5 {
 
     #thelast {
         grid-area: last;
-        display:inline-block;
+        display: inline-block;
     }
 
     #imgcardsm1, #imgcardsm2, #imgcardsm3, #imgcardsm4 {
         display: none;
     }
-    #logotext{
-        display:none;
 
+    #logotext {
+        display: none;
     }
+
     #imgcardlg1, #imgcardlg2, #imgcardlg3, #imgcardlg4 {
         display: inline-block;
     }
@@ -585,17 +465,24 @@ h5 {
     #art ul {
         list-style-type: none;
     }
-    #smcircrow ul{
+
+    #smcircrow ul {
         margin-left: 200px;
-        margin-right:200px;
+        margin-right: 200px;
         display: flex;
         justify-content: space-between;
         padding: 0;
-
-
     }
 
+    #mlogotext {
+        display: inline-block;
     }
+
+
+
+}
+
+/*-----For Extra Large Screens -----*/
 
 @media screen and (min-width: 1200px) {
 
@@ -606,19 +493,10 @@ h5 {
         grid-template-columns: 12% repeat(3, 1fr) 12%;
         justify-content: center;
         align-content: center;
-        /*grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 105px 105px 3fr 4fr 2fr;*/
         grid-gap: 0;
         height: 100%;
         width: 100vw;
-        grid-template-areas:
-                ".  .  .  .  ."
-                "wb wb wb wb wb"
-                ". bglgt bglgt bglgt ."
-                ".  .  pc  .  ."
-                ".  crc  crc  crc  ."
-                ".  sel  .  last  ."
-                ".  imglg1 imglg2 art1  ."
-                ". imglg3 imglg4 art1  .";
+        grid-template-areas: ".  .  .  .  ." "wb wb wb wb wb" ". bglgt bglgt bglgt ." ".  .  pc  .  ." ".  crc  crc  crc  ." ".  sel  .  last  ." ".  imglg1 imglg2 art1  ." ". imglg3 imglg4 art1  .";
 
     }
 
